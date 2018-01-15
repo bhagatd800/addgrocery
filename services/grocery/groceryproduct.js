@@ -35,7 +35,7 @@ const groceryproduct = async() => {
       var retailer=await groceryStores.findOne({_id:datas.retailerId})
       console.log(retailer)
       if(retailer){
-        for(i=0;i<=datas.data.length;i++){
+        for(i=0;i<datas.data.length;i++){
           var data=datas.data[i]
           console.log(typeof(data.price))
           console.log(i)
